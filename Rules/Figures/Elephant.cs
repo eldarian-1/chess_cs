@@ -5,14 +5,16 @@ namespace Rules.Figures
 {
     public class Elephant : AFigure
     {
+        public Elephant(bool white) : base(white) { }
+
         protected override IEnumerable<Point> ClearPoints(Path path)
         {
-            return new PathDetermining(path).ElephantPoints();
+            return new PathDetermining(path).Elephant().Points;
         }
 
         protected override bool IsRight(Path path)
         {
-            return new WalkingRules(path).IsElephantPath();
+            return new WalkingRules(path).Elephant();
         }
     }
 }

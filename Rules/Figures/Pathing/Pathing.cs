@@ -1,18 +1,18 @@
 ﻿namespace Rules.Figures.Pathing
 {
-    internal class Pathing
+    internal abstract class Pathing
     {
-        protected int fx;
-        protected int fy;
-        protected int tx;
-        protected int ty;
+        protected int h0;
+        protected int v0;
+        protected int h1;
+        protected int v1;
 
         public Pathing(Path path)
         {
-            fx = path.From.X;
-            fy = path.From.Y;
-            tx = path.To.X;
-            ty = path.To.Y;
+            h0 = path.From.X;
+            v0 = path.From.Y;
+            h1 = path.To.X;
+            v1 = path.To.Y;
         }
     }
 }

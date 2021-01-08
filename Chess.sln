@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rules", "Rules\Rules.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Rules", "Test.Rules\Test.Rules.csproj", "{E9B545B9-A773-464A-8E5C-B1DC539F3E39}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfUI", "WpfUI\WpfUI.csproj", "{AE82D468-7F54-4A0B-A827-DBC303F3E99A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{E9B545B9-A773-464A-8E5C-B1DC539F3E39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E9B545B9-A773-464A-8E5C-B1DC539F3E39}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E9B545B9-A773-464A-8E5C-B1DC539F3E39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE82D468-7F54-4A0B-A827-DBC303F3E99A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE82D468-7F54-4A0B-A827-DBC303F3E99A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE82D468-7F54-4A0B-A827-DBC303F3E99A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE82D468-7F54-4A0B-A827-DBC303F3E99A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

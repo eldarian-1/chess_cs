@@ -4,36 +4,43 @@ namespace Rules.Figures.Pathing
 {
     internal class PathDetermining : Pathing
     {
-        public PathDetermining(Path path) : base(path) { }
+        public IEnumerable<Point> Points { get; private set; }
 
-        public IEnumerable<Point> PawnPoints()
+        public PathDetermining(Path path) : base(path)
         {
-            return null;
+            Points = new List<Point>();
         }
 
-        public IEnumerable<Point> RookPoints()
+        public PathDetermining Pawn()
         {
-            return null;
+            return this;
         }
 
-        public IEnumerable<Point> HorsePoints()
+        public PathDetermining Rook()
         {
-            return null;
+            return this;
         }
 
-        public IEnumerable<Point> ElephantPoints()
+        public PathDetermining Horse()
         {
-            return null;
+            return this;
         }
 
-        public IEnumerable<Point> QueenPoints()
+        public PathDetermining Elephant()
         {
-            return null;
+            return this;
         }
 
-        public IEnumerable<Point> KingPoints()
+        public PathDetermining Queen()
         {
-            return null;
+            Rook();
+            Elephant();
+            return this;
+        }
+
+        public PathDetermining King()
+        {
+            return this;
         }
     }
 }

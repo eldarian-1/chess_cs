@@ -15,6 +15,8 @@
         {
             if (!m_Board.IsMoveAvailable(path))
                 m_Referee.MoveNotAvailable();
+            else
+                m_Referee.MoveAvailable();
         }
     }
 }
